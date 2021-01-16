@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Frogger</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css"> 
+</head>
+<body>
+    <div class="game">
+        <div class="score">
+            <p class="score-p">Score: <span id="score">0</span><p>
+            <p class="hscore-p">High score: <span id="high-score">0</span></p>
+        </div>
+        <canvas id="canvas" width="650" height="700" style="border: 1px solid black; box-sizing: border-box"></canvas>
+        <div class="game-over" id="game-over-div">
+            <p>Game over. Continue?</p>
+            <div class="buttons">
+                <div class="btn" id="yes-button">Yes</div>
+                <div class="btn" id="no-button">No</div>
+            </div>
+        </div>
+        <div class="timer"><h1>Time</h1>
+            <div class="lives">
+                <div class="live" id="live2"></div>
+                <div class="live" id="live1"></div>
+            </div>
+            <div class="timer-bar"></div>
+        </div>
+        <div id="debug">
+            <div>
+                <p>Camera x: <span id="camera-x"></span></p>
+                <p>Camera y: <span id="camera-y">0</span></p>
+            </div>
+            <div>
+                <p>Sprite x: <span id="sprite-x">0</span></p>
+                <p>Sprite y: <span id="sprite-y">0</span></p>
+            </div>
+            <div>
+                <p>Click x: <span id="click-x">0</span></p>
+                <p>Click y: <span id="click-y">0</span></p>
+            </div>
+        </div>
+        <script src="js/sprite.js"></script>
+        <script src="js/game.js"></script>
+    </div>
+</body>
+</html>
